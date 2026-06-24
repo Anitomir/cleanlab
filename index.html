@@ -244,8 +244,8 @@
       <div class="booking-inner">
 
         <div class="booking-info">
-          <h2 data-es="Pide tu presupuesto gratis" data-en="Get your free quote">Pide tu presupuesto gratis</h2>
-          <p data-es="Rellena el formulario y te contactamos en menos de 1 hora." data-en="Fill in the form and we'll contact you within 1 hour.">Rellena el formulario y te contactamos en menos de 1 hora.</p>
+          <h2 data-es="Elige tu hora. Nosotros nos encargamos del resto." data-en="Pick a time. We'll handle the rest.">Elige tu hora. Nosotros nos encargamos del resto.</h2>
+          <p data-es="Rellena el formulario y te llamamos en menos de 30 minutos con un presupuesto gratuito." data-en="Fill in the form and we'll call you back within 30 minutes with a free quote.">Rellena el formulario y te llamamos en menos de 30 minutos con un presupuesto gratuito.</p>
           <div class="booking-contact-links">
             <a href="tel:0875674880" class="contact-link">
               <span class="contact-icon">📞</span>
@@ -259,9 +259,11 @@
         </div>
 
         <form class="booking-form" id="bookingForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+          <!-- Row 1: Name + Phone -->
           <div class="form-row">
             <div class="form-group">
-              <label data-es="Nombre *" data-en="Name *">Nombre *</label>
+              <label data-es="Nombre completo *" data-en="Full name *">Nombre completo *</label>
               <input type="text" name="name" required
                 data-placeholder-es="Tu nombre" data-placeholder-en="Your name"
                 placeholder="Tu nombre" />
@@ -273,10 +275,12 @@
                 placeholder="+34 XXX XXX XXX" />
             </div>
           </div>
+
+          <!-- Row 2: Email + Service -->
           <div class="form-row">
             <div class="form-group">
-              <label data-es="Email" data-en="Email">Email</label>
-              <input type="email" name="email"
+              <label data-es="Email *" data-en="Email *">Email *</label>
+              <input type="email" name="email" required
                 data-placeholder-es="tu@email.com" data-placeholder-en="your@email.com"
                 placeholder="tu@email.com" />
             </div>
@@ -286,19 +290,68 @@
                 <option value="" data-es="Selecciona un servicio" data-en="Select a service">Selecciona un servicio</option>
                 <option value="sofa" data-es="Limpieza de sofá" data-en="Sofa cleaning">Limpieza de sofá</option>
                 <option value="car" data-es="Tapicería de coche" data-en="Car upholstery">Tapicería de coche</option>
-                <option value="mattress" data-es="Colchón" data-en="Mattress">Colchón</option>
-                <option value="carpet" data-es="Alfombra" data-en="Carpet">Alfombra</option>
+                <option value="mattress" data-es="Limpieza de colchón" data-en="Mattress cleaning">Limpieza de colchón</option>
+                <option value="carpet" data-es="Limpieza de alfombra" data-en="Carpet cleaning">Limpieza de alfombra</option>
               </select>
             </div>
           </div>
+
+          <!-- Address -->
           <div class="form-group">
-            <label data-es="Mensaje (opcional)" data-en="Message (optional)">Mensaje (opcional)</label>
-            <textarea name="message" rows="3"
-              data-placeholder-es="Cuéntanos qué necesitas..." data-placeholder-en="Tell us what you need..."
-              placeholder="Cuéntanos qué necesitas..."></textarea>
+            <label data-es="Dirección *" data-en="Address *">Dirección *</label>
+            <input type="text" name="address" required
+              data-placeholder-es="Calle, número, piso — Valencia" data-placeholder-en="Street, number, floor — Valencia"
+              placeholder="Calle, número, piso — Valencia" />
           </div>
-          <button type="submit" class="btn-primary btn-full" data-es="Enviar solicitud" data-en="Send request">Enviar solicitud</button>
-          <p class="form-success" id="formSuccess" data-es="✓ ¡Recibido! Te contactaremos pronto." data-en="✓ Received! We'll contact you soon." hidden></p>
+
+          <!-- Row 3: Date + Time window -->
+          <div class="form-row">
+            <div class="form-group">
+              <label data-es="Fecha preferida *" data-en="Preferred date *">Fecha preferida *</label>
+              <input type="date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label data-es="Hora preferida *" data-en="Preferred time *">Hora preferida *</label>
+              <div class="time-grid">
+                <label class="time-option">
+                  <input type="radio" name="time_window" value="morning" required />
+                  <span data-es="Mañana" data-en="Morning">Mañana</span>
+                  <small>8–11 AM</small>
+                </label>
+                <label class="time-option">
+                  <input type="radio" name="time_window" value="midday" />
+                  <span data-es="Mediodía" data-en="Midday">Mediodía</span>
+                  <small>11–14 h</small>
+                </label>
+                <label class="time-option">
+                  <input type="radio" name="time_window" value="afternoon" />
+                  <span data-es="Tarde" data-en="Afternoon">Tarde</span>
+                  <small>14–17 h</small>
+                </label>
+                <label class="time-option">
+                  <input type="radio" name="time_window" value="evening" />
+                  <span data-es="Noche" data-en="Evening">Noche</span>
+                  <small>17–19 h</small>
+                </label>
+                <label class="time-option time-option--wide">
+                  <input type="radio" name="time_window" value="anytime" />
+                  <span data-es="Cualquier hora" data-en="Anytime">Cualquier hora</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Notes -->
+          <div class="form-group">
+            <label data-es="¿Algo que debamos saber? (opcional)" data-en="Anything we should know? (optional)">¿Algo que debamos saber? (opcional)</label>
+            <textarea name="message" rows="3"
+              data-placeholder-es="Tipo de tela, manchas difíciles, mascotas en casa..." data-placeholder-en="Fabric type, tough stains, pets at home..."
+              placeholder="Tipo de tela, manchas difíciles, mascotas en casa..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary btn-full" data-es="Reservar mi hora" data-en="Lock In My Time">Reservar mi hora</button>
+          <p class="form-note" data-es="Sin necesidad de tarjeta de crédito." data-en="No credit card needed.">Sin necesidad de tarjeta de crédito.</p>
+          <p class="form-success" id="formSuccess" data-es="✓ ¡Recibido! Te llamamos en menos de 30 minutos." data-en="✓ Received! We'll call you within 30 minutes." hidden></p>
         </form>
 
       </div>
