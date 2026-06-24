@@ -516,39 +516,56 @@ img { max-width: 100%; display: block; }
 /* Time window radio grid */
 .time-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 6px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
 }
 .time-option {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
-  padding: 10px 6px;
-  border: 1.5px solid var(--border);
-  border-radius: 8px;
+  justify-content: center;
+  gap: 4px;
+  padding: 16px 12px;
+  border: 2px solid var(--border);
+  border-radius: 10px;
   cursor: pointer;
   text-align: center;
   transition: all var(--transition);
-  font-size: .8rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  line-height: 1.3;
+  background: var(--bg);
+  user-select: none;
 }
 .time-option input[type="radio"] { display: none; }
-.time-option small { font-size: .7rem; font-weight: 400; opacity: .8; }
-.time-option:has(input:checked),
+.time-option span {
+  font-size: .9rem;
+  font-weight: 700;
+  color: var(--text);
+  transition: color var(--transition);
+}
+.time-option small {
+  font-size: .75rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  transition: color var(--transition);
+}
 .time-option:hover {
   border-color: var(--blue);
   background: var(--blue-light);
-  color: var(--blue);
 }
+.time-option:hover span,
+.time-option:hover small { color: var(--blue); }
+
+.time-option:has(input:checked) {
+  border-color: var(--blue);
+  background: var(--blue);
+}
+.time-option:has(input:checked) span,
+.time-option:has(input:checked) small { color: #fff; }
+
 .time-option--wide {
-  grid-column: span 4;
+  grid-column: span 2;
   flex-direction: row;
-  justify-content: center;
-  gap: 6px;
-  padding: 8px;
+  gap: 8px;
+  padding: 14px 12px;
 }
 
 .form-note {
@@ -663,6 +680,7 @@ img { max-width: 100%; display: block; }
   .form-row { grid-template-columns: 1fr; }
   .time-grid { grid-template-columns: repeat(2, 1fr); }
   .time-option--wide { grid-column: span 2; }
+  .time-option { padding: 14px 8px; }
 
   /* Footer */
   .footer-inner { grid-template-columns: 1fr; gap: 32px; }
