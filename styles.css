@@ -495,6 +495,19 @@ img { max-width: 100%; display: block; }
   font-weight: 600;
   color: var(--text);
 }
+.form-group label .req,
+.form-group label[data-es$=" *"],
+.form-group label[data-en$=" *"] { color: var(--text); }
+.form-group label::after {
+  content: '';
+}
+/* Red star on required field labels */
+.form-group:has(input[required]) > label::after,
+.form-group:has(select[required]) > label::after {
+  content: ' *';
+  color: #E53E3E;
+  font-weight: 700;
+}
 .form-group input,
 .form-group select,
 .form-group textarea {
