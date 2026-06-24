@@ -529,7 +529,7 @@ img { max-width: 100%; display: block; }
 /* Time window radio grid */
 .time-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 8px;
 }
 .time-option {
@@ -575,6 +575,7 @@ img { max-width: 100%; display: block; }
 .time-option:has(input:checked) small { color: #fff; }
 
 .time-option--wide {
+  grid-column: span 2;
   flex-direction: row;
   gap: 8px;
   padding: 14px 12px;
