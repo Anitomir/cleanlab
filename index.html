@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CleanLab — Limpieza de Tapizados en Valencia</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════ HEADER ═══════════════ -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-inner">
+
+        <a href="#" class="logo">
+          <span class="logo-clean">Clean</span><span class="logo-lab">Lab</span>
+        </a>
+
+        <nav class="nav" id="nav">
+          <a href="#services"    class="nav-link" data-es="Servicios"      data-en="Services">Servicios</a>
+          <a href="#how-it-works" class="nav-link" data-es="Cómo funciona" data-en="How it works">Cómo funciona</a>
+          <a href="#reviews"     class="nav-link" data-es="Opiniones"      data-en="Reviews">Opiniones</a>
+          <a href="#booking"     class="nav-link nav-cta" data-es="Reservar" data-en="Book now">Reservar</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="tel:0875674880" class="header-phone">087 567 4 88</a>
+          <div class="lang-toggle">
+            <button class="lang-btn active" data-lang="es">ES</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
+          <button class="burger" id="burger" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-badge" data-es="Valencia, España" data-en="Valencia, Spain">Valencia, España</span>
+        <h1 data-es="Tapizados limpios como el primer día" data-en="Upholstery clean as the first day">
+          Tapizados limpios<br>como el primer día
+        </h1>
+        <p data-es="Limpieza profesional de sofás, colchones, tapicería de coche y alfombras. Resultado garantizado o repetimos gratis." data-en="Professional cleaning of sofas, mattresses, car upholstery and carpets. Guaranteed results or we redo it for free.">
+          Limpieza profesional de sofás, colchones, tapicería de coche y alfombras. Resultado garantizado o repetimos gratis.
+        </p>
+        <div class="hero-btns">
+          <a href="#booking" class="btn-primary" data-es="Pedir presupuesto gratis" data-en="Get a free quote">Pedir presupuesto gratis</a>
+          <a href="tel:0875674880" class="btn-ghost" data-es="Llamar ahora" data-en="Call now">Llamar ahora</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-img-placeholder">
+          <span data-es="Foto del equipo / resultado" data-en="Team photo / result">Foto del equipo / resultado</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ TRUST BADGES ═══════════════ -->
+  <section class="trust">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <span class="trust-number">500+</span>
+          <span class="trust-label" data-es="Clientes satisfechos" data-en="Happy clients">Clientes satisfechos</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-number">3+</span>
+          <span class="trust-label" data-es="Años de experiencia" data-en="Years of experience">Años de experiencia</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-number">4.9★</span>
+          <span class="trust-label" data-es="Valoración media" data-en="Average rating">Valoración media</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-number">100%</span>
+          <span class="trust-label" data-es="Garantía de satisfacción" data-en="Satisfaction guarantee">Garantía de satisfacción</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SERVICES ═══════════════ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-es="Nuestros servicios" data-en="Our services">Nuestros servicios</h2>
+        <p data-es="Limpieza profesional para cada necesidad" data-en="Professional cleaning for every need">Limpieza profesional para cada necesidad</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">🛋️</div>
+          <h3 data-es="Limpieza de sofás" data-en="Sofa cleaning">Limpieza de sofás</h3>
+          <p data-es="Eliminación profunda de manchas, bacterias y ácaros en todo tipo de tejidos y cueros." data-en="Deep removal of stains, bacteria and mites from all types of fabrics and leathers.">Eliminación profunda de manchas, bacterias y ácaros en todo tipo de tejidos y cueros.</p>
+          <div class="service-price" data-es="Desde XX €" data-en="From XX €">Desde XX €</div>
+          <a href="#booking" class="btn-outline" data-es="Reservar" data-en="Book">Reservar</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🚗</div>
+          <h3 data-es="Tapicería de coche" data-en="Car upholstery">Tapicería de coche</h3>
+          <p data-es="Limpieza completa de asientos, techo y alfombrillas. Tu coche como el primer día." data-en="Complete cleaning of seats, roof lining and mats. Your car like the first day.">Limpieza completa de asientos, techo y alfombrillas. Tu coche como el primer día.</p>
+          <div class="service-price" data-es="Desde XX €" data-en="From XX €">Desde XX €</div>
+          <a href="#booking" class="btn-outline" data-es="Reservar" data-en="Book">Reservar</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🛏️</div>
+          <h3 data-es="Limpieza de colchones" data-en="Mattress cleaning">Limpieza de colchones</h3>
+          <p data-es="Higienización profunda: eliminación de ácaros, manchas y malos olores para dormir sano." data-en="Deep sanitization: removal of mites, stains and bad odors for healthy sleep.">Higienización profunda: eliminación de ácaros, manchas y malos olores para dormir sano.</p>
+          <div class="service-price" data-es="Desde XX €" data-en="From XX €">Desde XX €</div>
+          <a href="#booking" class="btn-outline" data-es="Reservar" data-en="Book">Reservar</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🏠</div>
+          <h3 data-es="Limpieza de alfombras" data-en="Carpet cleaning">Limpieza de alfombras</h3>
+          <p data-es="Limpieza en profundidad de alfombras y moquetas de cualquier tamaño y material." data-en="Deep cleaning of rugs and carpets of any size and material.">Limpieza en profundidad de alfombras y moquetas de cualquier tamaño y material.</p>
+          <div class="service-price" data-es="Desde XX €" data-en="From XX €">Desde XX €</div>
+          <a href="#booking" class="btn-outline" data-es="Reservar" data-en="Book">Reservar</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ HOW IT WORKS ═══════════════ -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-es="¿Cómo funciona?" data-en="How does it work?">¿Cómo funciona?</h2>
+        <p data-es="Simple y sin complicaciones" data-en="Simple and hassle-free">Simple y sin complicaciones</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3 data-es="Contáctanos" data-en="Contact us">Contáctanos</h3>
+          <p data-es="Llama o rellena el formulario. Te respondemos en menos de 1 hora." data-en="Call or fill in the form. We respond in less than 1 hour.">Llama o rellena el formulario. Te respondemos en menos de 1 hora.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3 data-es="Acordamos visita" data-en="We schedule">Acordamos visita</h3>
+          <p data-es="Elegimos juntos el día y la hora que mejor te venga." data-en="We choose together the day and time that suits you best.">Elegimos juntos el día y la hora que mejor te venga.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3 data-es="Limpieza profesional" data-en="Professional clean">Limpieza profesional</h3>
+          <p data-es="Nuestro equipo llega puntual con todo el material necesario." data-en="Our team arrives on time with all necessary equipment.">Nuestro equipo llega puntual con todo el material necesario.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3 data-es="¡Resultado garantizado!" data-en="Guaranteed result!">¡Resultado garantizado!</h3>
+          <p data-es="Disfruta el resultado. Si no quedas satisfecho, repetimos gratis." data-en="Enjoy the result. If not satisfied, we redo it for free.">Disfruta el resultado. Si no quedas satisfecho, repetimos gratis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ GALLERY ═══════════════ -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-es="Antes y después" data-en="Before & After">Antes y después</h2>
+        <p data-es="Resultados reales de nuestros clientes" data-en="Real results from our clients">Resultados reales de nuestros clientes</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-pair">
+          <div class="gallery-item">
+            <div class="gallery-placeholder dark"></div>
+            <span class="gallery-tag" data-es="Antes" data-en="Before">Antes</span>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-placeholder light"></div>
+            <span class="gallery-tag after" data-es="Después" data-en="After">Después</span>
+          </div>
+        </div>
+        <div class="gallery-pair">
+          <div class="gallery-item">
+            <div class="gallery-placeholder dark"></div>
+            <span class="gallery-tag" data-es="Antes" data-en="Before">Antes</span>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-placeholder light"></div>
+            <span class="gallery-tag after" data-es="Después" data-en="After">Después</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ REVIEWS ═══════════════ -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-es="Lo que dicen nuestros clientes" data-en="What our clients say">Lo que dicen nuestros clientes</h2>
+      </div>
+      <div class="reviews-grid">
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p data-es="&ldquo;El sofá parecía nuevo después de la limpieza. Muy profesionales y puntuales. ¡Totalmente recomendados!&rdquo;" data-en="&ldquo;The sofa looked brand new after the cleaning. Very professional and punctual. Highly recommended!&rdquo;">
+            &ldquo;El sofá parecía nuevo después de la limpieza. Muy profesionales y puntuales. ¡Totalmente recomendados!&rdquo;
+          </p>
+          <div class="review-author">— María G., Valencia</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p data-es="&ldquo;Limpiaron la tapicería de mi coche y quedó perfecta. Precio justo y trabajo excelente.&rdquo;" data-en="&ldquo;They cleaned my car upholstery and it came out perfect. Fair price and excellent work.&rdquo;">
+            &ldquo;Limpiaron la tapicería de mi coche y quedó perfecta. Precio justo y trabajo excelente.&rdquo;
+          </p>
+          <div class="review-author">— Carlos M., Valencia</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p data-es="&ldquo;El colchón tenía manchas antiguas y mal olor. Después del servicio, estaba impecable. ¡Los recomiendo!&rdquo;" data-en="&ldquo;The mattress had old stains and bad smell. After the service, it was spotless. I recommend them!&rdquo;">
+            &ldquo;El colchón tenía manchas antiguas y mal olor. Después del servicio, estaba impecable. ¡Los recomiendo!&rdquo;
+          </p>
+          <div class="review-author">— Ana L., Valencia</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ BOOKING ═══════════════ -->
+  <section class="booking" id="booking">
+    <div class="container">
+      <div class="booking-inner">
+
+        <div class="booking-info">
+          <h2 data-es="Pide tu presupuesto gratis" data-en="Get your free quote">Pide tu presupuesto gratis</h2>
+          <p data-es="Rellena el formulario y te contactamos en menos de 1 hora." data-en="Fill in the form and we'll contact you within 1 hour.">Rellena el formulario y te contactamos en menos de 1 hora.</p>
+          <div class="booking-contact-links">
+            <a href="tel:0875674880" class="contact-link">
+              <span class="contact-icon">📞</span>
+              <span>087 567 4 88</span>
+            </a>
+            <a href="mailto:alex@gmail.com" class="contact-link">
+              <span class="contact-icon">✉️</span>
+              <span>alex@gmail.com</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="booking-form" id="bookingForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label data-es="Nombre *" data-en="Name *">Nombre *</label>
+              <input type="text" name="name" required
+                data-placeholder-es="Tu nombre" data-placeholder-en="Your name"
+                placeholder="Tu nombre" />
+            </div>
+            <div class="form-group">
+              <label data-es="Teléfono *" data-en="Phone *">Teléfono *</label>
+              <input type="tel" name="phone" required
+                data-placeholder-es="+34 XXX XXX XXX" data-placeholder-en="+34 XXX XXX XXX"
+                placeholder="+34 XXX XXX XXX" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label data-es="Email" data-en="Email">Email</label>
+              <input type="email" name="email"
+                data-placeholder-es="tu@email.com" data-placeholder-en="your@email.com"
+                placeholder="tu@email.com" />
+            </div>
+            <div class="form-group">
+              <label data-es="Servicio *" data-en="Service *">Servicio *</label>
+              <select name="service" required>
+                <option value="" data-es="Selecciona un servicio" data-en="Select a service">Selecciona un servicio</option>
+                <option value="sofa" data-es="Limpieza de sofá" data-en="Sofa cleaning">Limpieza de sofá</option>
+                <option value="car" data-es="Tapicería de coche" data-en="Car upholstery">Tapicería de coche</option>
+                <option value="mattress" data-es="Colchón" data-en="Mattress">Colchón</option>
+                <option value="carpet" data-es="Alfombra" data-en="Carpet">Alfombra</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label data-es="Mensaje (opcional)" data-en="Message (optional)">Mensaje (opcional)</label>
+            <textarea name="message" rows="3"
+              data-placeholder-es="Cuéntanos qué necesitas..." data-placeholder-en="Tell us what you need..."
+              placeholder="Cuéntanos qué necesitas..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full" data-es="Enviar solicitud" data-en="Send request">Enviar solicitud</button>
+          <p class="form-success" id="formSuccess" data-es="✓ ¡Recibido! Te contactaremos pronto." data-en="✓ Received! We'll contact you soon." hidden></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-clean">Clean</span><span class="logo-lab">Lab</span>
+          </a>
+          <p data-es="Limpieza profesional de tapizados en Valencia, España." data-en="Professional upholstery cleaning in Valencia, Spain.">Limpieza profesional de tapizados en Valencia, España.</p>
+        </div>
+
+        <div class="footer-nav">
+          <strong data-es="Servicios" data-en="Services">Servicios</strong>
+          <a href="#services" data-es="Sofás" data-en="Sofas">Sofás</a>
+          <a href="#services" data-es="Tapicería de coche" data-en="Car upholstery">Tapicería de coche</a>
+          <a href="#services" data-es="Colchones" data-en="Mattresses">Colchones</a>
+          <a href="#services" data-es="Alfombras" data-en="Carpets">Alfombras</a>
+        </div>
+
+        <div class="footer-nav">
+          <strong data-es="Empresa" data-en="Company">Empresa</strong>
+          <a href="#how-it-works" data-es="Cómo funciona" data-en="How it works">Cómo funciona</a>
+          <a href="#reviews" data-es="Opiniones" data-en="Reviews">Opiniones</a>
+          <a href="#booking" data-es="Contacto" data-en="Contact">Contacto</a>
+        </div>
+
+        <div class="footer-contact-col">
+          <strong data-es="Contacto" data-en="Contact">Contacto</strong>
+          <a href="tel:0875674880">087 567 4 88</a>
+          <a href="mailto:alex@gmail.com">alex@gmail.com</a>
+          <span>Valencia, España</span>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 CleanLab. <span data-es="Todos los derechos reservados." data-en="All rights reserved.">Todos los derechos reservados.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
