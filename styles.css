@@ -516,7 +516,7 @@ img { max-width: 100%; display: block; }
 /* Time window radio grid */
 .time-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 8px;
 }
 .time-option {
@@ -562,7 +562,6 @@ img { max-width: 100%; display: block; }
 .time-option:has(input:checked) small { color: #fff; }
 
 .time-option--wide {
-  grid-column: span 2;
   flex-direction: row;
   gap: 8px;
   padding: 14px 12px;
@@ -678,8 +677,6 @@ img { max-width: 100%; display: block; }
   .booking-inner { grid-template-columns: 1fr; gap: 40px; }
   .booking-form { padding: 28px 20px; }
   .form-row { grid-template-columns: 1fr; }
-  .time-grid { grid-template-columns: repeat(2, 1fr); }
-  .time-option--wide { grid-column: span 2; }
   .time-option { padding: 14px 8px; }
 
   /* Footer */
